@@ -184,7 +184,7 @@ function showNotification(message, type = 'info') {
 function downloadResume() {
     // Create a temporary link element
     const link = document.createElement('a');
-    link.href = 'Fall 2025 Mikhael Hilaly Resume.pdf';
+    link.href = 'Hilaly_Mikhael_Spring_2026_Resume.docx.pdf';
     link.download = 'Mikhael_Hilaly_Resume.pdf';
     link.target = '_blank';
     
