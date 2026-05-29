@@ -184,8 +184,8 @@ function showNotification(message, type = 'info') {
 function downloadResume() {
     // Create a temporary link element
     const link = document.createElement('a');
-    link.href = 'Hilaly_Mikhael_Spring_2026_Resume (2).pdf';
-    link.download = 'Mikhael_Hilaly_Resume.pdf';
+    link.href = 'Hilaly, Mikhael Resume.pdf';
+    link.download = 'Hilaly, Mikhael Resume.pdf';
     link.target = '_blank';
     
     // Trigger the download
