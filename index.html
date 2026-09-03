@@ -165,105 +165,37 @@
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects projects-sports" aria-labelledby="sports-title">
         <div class="container">
-            <h2 id="other-projects" class="section-title">Analytics in practice</h2>
-            <p class="section-subtitle">Forecasting, program evaluation, and decision support in business and nonprofit settings.</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-league consulting">Consulting</div>
-                        <h3>Hotel Pricing &amp; Occupancy Forecasting</h3>
-                        <span class="project-date">September–December 2025</span>
-                    </div>
-                    <p class="project-description">Built a custom dataset and machine learning models to study hotel pricing, revenue, and occupancy in Tokyo's Ginza district. A consulting project with Peregrine Consulting and USC Kappa Theta Pi.</p>
-                    <div class="project-highlights">
-                        <div class="highlight">
-                            <i class="fas fa-trophy" aria-hidden="true"></i>
-                            <span>R² of 0.99 for occupancy, ADR, and RevPAR prediction</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
-                            <span>XGBoost regression with scenario analysis</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-dollar-sign" aria-hidden="true"></i>
-                            <span>Strategic insights into pricing optimization</span>
+            <h2 id="sports-title" class="section-title">Sports analytics</h2>
+            <p class="section-subtitle">Forecasting, classification, and statistical analysis across women’s college basketball, the NBA, and the NFL.</p>
+            <article id="wbb-project" class="featured-project" aria-labelledby="wbb-title">
+                <p class="eyebrow">Featured WBB project · August 2026</p>
+                <div class="featured-layout">
+                    <div>
+                        <h3 id="wbb-title">USC women’s basketball: modeling team strength</h3>
+                        <p class="featured-intro">Built a preseason forecasting model for USC women's basketball in 2026–27, combining feature engineering, rolling validation, and uncertainty analysis to evaluate team strength and roster decisions.</p>
+                        <dl class="featured-metrics">
+                            <div><dt>3,607</dt><dd>Division I team-seasons</dd></div>
+                            <div><dt>35.5</dt><dd>USC projected SRS</dd></div>
+                            <div><dt>4.63</dt><dd>Validation MAE</dd></div>
+                        </dl>
+                        <p class="method-note">Ridge regression · 22 preseason inputs · Rolling validation across 1,990 held-out team-seasons. SRS measures team strength; this is not a championship-probability forecast.</p>
+                        <div class="project-links">
+                            <a class="btn btn-primary" href="https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/">Read the full analysis <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="https://github.com/MHilaly/usc-womens-basketball-analytics">Code &amp; methodology <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">XGBoost</span>
-                        <span class="tech-tag">Google APIs</span>
-                    </div>
+                    <figure class="featured-figure">
+                        <a href="https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/" aria-label="Read the USC women's basketball title-case analysis">
+                            <img src="assets/wbb-contender-projections.png" alt="Projected SRS: South Carolina 53.8, UConn 47.9, Texas 42.3, and USC 35.5, with uncertainty intervals." width="2950" height="1418" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption>USC sits fourth among the four modeled contenders. Chart from my USC Women's Basketball 2026–27 Title Case.</figcaption>
+                    </figure>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-league nonprofit">Nonprofit</div>
-                        <h3>Claire's Place Grant Analysis</h3>
-                        <span class="project-date">April 2024 - May 2024</span>
-                    </div>
-                    <p class="project-description">Evaluated a policy change in Claire's Place Foundation's Extended Hospital Stay Grant program, using statistical analysis and A/B testing to inform grant allocation and program decisions.</p>
-                    <div class="project-highlights">
-                        <div class="highlight">
-                            <i class="fas fa-percentage" aria-hidden="true"></i>
-                            <span>36% improvement in recipient prediction accuracy</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-test-tube" aria-hidden="true"></i>
-                            <span>A/B hypothesis testing on grant and survey data</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
-                            <span>Actionable recommendations for program efficiency</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">R</span>
-                        <span class="tech-tag">Statistical Analysis</span>
-                        <span class="tech-tag">A/B Testing</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="wbb-project" class="featured-project">
-        <div class="container">
-            <p class="eyebrow">Latest research · Predictive modeling · August 2026</p>
-            <div class="featured-layout">
-                <div>
-                    <h2>USC women’s basketball: modeling team strength</h2>
-                    <p class="featured-intro">Built a preseason forecasting model for USC women's basketball in 2026–27, combining feature engineering, rolling validation, and uncertainty analysis to evaluate team strength and roster decisions.</p>
-                    <dl class="featured-metrics">
-                        <div><dt>3,607</dt><dd>Division I team-seasons</dd></div>
-                        <div><dt>35.5</dt><dd>USC projected SRS</dd></div>
-                        <div><dt>4.63</dt><dd>Validation MAE</dd></div>
-                    </dl>
-                    <p class="method-note">Ridge regression · 22 preseason inputs · Rolling validation across 1,990 held-out team-seasons. SRS measures team strength; this is not a championship-probability forecast.</p>
-                    <div class="project-links">
-                        <a class="btn btn-primary" href="https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/">Read the full analysis <span aria-hidden="true">↗</span></a>
-                        <a class="text-link" href="https://github.com/MHilaly/usc-womens-basketball-analytics">Code &amp; methodology <span aria-hidden="true">↗</span></a>
-                    </div>
-                </div>
-                <figure class="featured-figure">
-                    <a href="https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/" aria-label="Read the USC women's basketball title-case analysis">
-                        <img src="assets/wbb-contender-projections.png" alt="Projected SRS: South Carolina 53.8, UConn 47.9, Texas 42.3, and USC 35.5, with uncertainty intervals." width="2950" height="1418" loading="lazy" decoding="async">
-                    </a>
-                    <figcaption>USC sits fourth among the four modeled contenders. Chart from my USC Women's Basketball 2026–27 Title Case.</figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <section id="more-projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Sports analytics research</h2>
-            <p class="section-subtitle">Using sports data to explore classification, statistical testing, and decisions under constraints.</p>
-            <div class="projects-grid">
-                <div class="project-card project-card-sports">
+            </article>
+            <div id="more-projects" class="projects-grid">
+                <div class="project-card project-card-sports project-card-nfl">
                     <div class="project-header">
                         <div class="project-league nfl">NFL</div>
                         <h3>Are Pocket Passers Outdated? — NFL Quarterback Mobility Analysis</h3>
@@ -292,7 +224,7 @@
                     <a class="text-link project-source" href="https://github.com/MHilaly/QB-Mobility-Analysis">Explore the analysis &amp; code <span aria-hidden="true">↗</span></a>
                 </div>
 
-                <div class="project-card project-card-sports">
+                <div class="project-card project-card-sports project-card-nba">
                     <div class="project-header">
                         <div class="project-league nba">NBA</div>
                         <h3>NBA Player Position Predictor</h3>
@@ -320,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="project-card project-card-sports">
+                <div class="project-card project-card-sports project-card-nba">
                     <div class="project-header">
                         <div class="project-league nba">NBA</div>
                         <h3>NBA Roster Construction Under the New CBA</h3>
@@ -349,7 +281,7 @@
                     </div>
                 </div>
 
-                <div class="project-card project-card-sports">
+                <div class="project-card project-card-sports project-card-nfl">
                     <div class="project-header">
                         <div class="project-league nfl">NFL</div>
                         <h3>Kicking Under Pressure — NFL Field Goal Performance Analysis</h3>
@@ -374,6 +306,71 @@
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Statistical Analysis</span>
                         <span class="tech-tag">Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="other-projects" class="projects projects-business">
+        <div class="container">
+            <h2 class="section-title">Business &amp; nonprofit analytics</h2>
+            <p class="section-subtitle">Forecasting, program evaluation, and decision support in business and nonprofit settings.</p>
+            <div class="projects-grid">
+                <div class="project-card project-card-consulting">
+                    <div class="project-header">
+                        <div class="project-league consulting">Consulting</div>
+                        <h3>Hotel Pricing &amp; Occupancy Forecasting</h3>
+                        <span class="project-date">September–December 2025</span>
+                    </div>
+                    <p class="project-description">Built a custom dataset and machine learning models to study hotel pricing, revenue, and occupancy in Tokyo's Ginza district. A consulting project with Peregrine Consulting and USC Kappa Theta Pi.</p>
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                            <span>R² of 0.99 for occupancy, ADR, and RevPAR prediction</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                            <span>XGBoost regression with scenario analysis</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                            <span>Strategic insights into pricing optimization</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">Google APIs</span>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-nonprofit">
+                    <div class="project-header">
+                        <div class="project-league nonprofit">Nonprofit</div>
+                        <h3>Claire's Place Grant Analysis</h3>
+                        <span class="project-date">April 2024 - May 2024</span>
+                    </div>
+                    <p class="project-description">Evaluated a policy change in Claire's Place Foundation's Extended Hospital Stay Grant program, using statistical analysis and A/B testing to inform grant allocation and program decisions.</p>
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-percentage" aria-hidden="true"></i>
+                            <span>36% improvement in recipient prediction accuracy</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-test-tube" aria-hidden="true"></i>
+                            <span>A/B hypothesis testing on grant and survey data</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                            <span>Actionable recommendations for program efficiency</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">R</span>
+                        <span class="tech-tag">Statistical Analysis</span>
+                        <span class="tech-tag">A/B Testing</span>
                     </div>
                 </div>
             </div>

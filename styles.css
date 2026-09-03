@@ -1,7 +1,12 @@
 :root {
-    --cardinal:#8d3444;
+    --cardinal:#9d344c;
     --cardinal-dark:#6d2332;
-    --gold:#e6c778;
+    --gold:#edbd54;
+    --teal:#176b72;
+    --blue:#305f9b;
+    --sky:#edf3fc;
+    --mint:#e9f4ee;
+    --peach:#fbe8dc;
     --ink:#253039;
     --muted:#60696c;
     --dark:#202c35;
@@ -145,7 +150,7 @@ section {
 
 /* Introduction */
 .hero {
-    background:radial-gradient(ellipse at 88% 35%,#efe3cb 0,transparent 48%),linear-gradient(130deg,#fcfbf8,#f7f3ec);
+    background:radial-gradient(ellipse at 100% 5%,#ffe1a6 0,transparent 52%),radial-gradient(ellipse at 0% 100%,#dcedeb 0,transparent 50%),#fff7ed;
     color:var(--ink);
     padding:80px 0 88px;
     border-bottom:1px solid var(--line);
@@ -217,7 +222,15 @@ section {
     display:block;
     font-size:1.35rem;
     font-weight:700;
-    color:var(--ink);
+    color:var(--cardinal);
+}
+
+.hero-stat:nth-child(2) .hero-stat-number {
+    color:var(--teal);
+}
+
+.hero-stat:nth-child(3) .hero-stat-number {
+    color:var(--blue);
 }
 
 .hero-stat-label {
@@ -315,11 +328,14 @@ section {
     text-align:center;
 }
 
-/* The latest research gets a full-width feature. */
+/* WBB is the featured article within the sports project collection. */
 .featured-project {
-    background:#fffaf0;
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
+    background:linear-gradient(125deg,#fff0cb,#fffaf0 70%);
+    padding:34px;
+    border:1px solid #e8d3a2;
+    border-top:5px solid var(--cardinal);
+    border-radius:20px;
+    box-shadow:var(--soft-shadow);
 }
 
 .eyebrow {
@@ -338,7 +354,7 @@ section {
     align-items:center;
 }
 
-.featured-layout h2 {
+.featured-layout h3 {
     font-size:clamp(1.85rem,3vw,2.65rem);
     line-height:1.15;
     letter-spacing:-.04em;
@@ -435,16 +451,46 @@ section {
     background:var(--paper);
 }
 
+.projects-sports {
+    background:var(--sky);
+}
+
+.projects-business {
+    background:#fff2e7;
+}
+
 #more-projects {
-    background:#fcfbf8;
+    margin-top:28px;
 }
 
 .project-card {
+    --project-accent:var(--cardinal);
     border:1px solid var(--line);
+    border-top:4px solid var(--project-accent);
     border-radius:18px;
     padding:32px;
     background:#fff;
     box-shadow:var(--soft-shadow);
+}
+
+.project-card-nfl {
+    --project-accent:var(--teal);
+}
+
+.project-card-nba {
+    --project-accent:#b87518;
+}
+
+.project-card-consulting {
+    --project-accent:var(--blue);
+}
+
+.project-card-nonprofit {
+    --project-accent:#3b7653;
+}
+
+.project-card .highlight i,.project-card .project-source {
+    color:var(--project-accent);
 }
 
 .project-header {
@@ -476,13 +522,23 @@ section {
 }
 
 .project-league.nfl {
-    color:#234f6a;
-    background:#eaf1f6;
+    color:#155c66;
+    background:#e0f2f2;
 }
 
-.project-league.nonprofit,.project-league.consulting {
-    color:#375c45;
-    background:#eef3ee;
+.project-league.nba {
+    color:#7b4c0f;
+    background:#fff0cd;
+}
+
+.project-league.nonprofit {
+    color:#326344;
+    background:#dff0e3;
+}
+
+.project-league.consulting {
+    color:var(--blue);
+    background:#e4edfc;
 }
 
 .project-description {
@@ -532,7 +588,7 @@ section {
 
 /* About and experience */
 .about {
-    background:var(--paper);
+    background:var(--mint);
 }
 
 .about-content {
@@ -584,7 +640,7 @@ section {
 }
 
 .skill-category h3 i {
-    color:var(--cardinal);
+    color:var(--teal);
     margin-right:5px;
 }
 
@@ -616,10 +672,27 @@ section {
 }
 
 .timeline-item {
+    --timeline-accent:var(--cardinal);
+    --timeline-tint:#fff3f5;
     position:relative;
     display:grid;
     grid-template-columns:156px minmax(0,1fr);
     gap:48px;
+}
+
+.timeline-item:nth-child(4n + 2) {
+    --timeline-accent:var(--blue);
+    --timeline-tint:#edf3fc;
+}
+
+.timeline-item:nth-child(4n + 3) {
+    --timeline-accent:var(--teal);
+    --timeline-tint:#eaf5f1;
+}
+
+.timeline-item:nth-child(4n + 4) {
+    --timeline-accent:#945b13;
+    --timeline-tint:#fff5df;
 }
 
 .timeline-item::before {
@@ -629,7 +702,7 @@ section {
     left:180px;
     width:13px;
     height:13px;
-    border:3px solid var(--cardinal);
+    border:3px solid var(--timeline-accent);
     border-radius:50%;
     background:#fff;
     box-shadow:0 0 0 5px #fff;
@@ -654,7 +727,7 @@ section {
 
 .timeline-year {
     display:block;
-    color:var(--cardinal-dark);
+    color:var(--timeline-accent);
     font-size:1.2rem;
     font-weight:750;
     line-height:1.3;
@@ -665,8 +738,9 @@ section {
     min-width:0;
     padding:27px 30px 24px;
     border:1px solid var(--line);
+    border-left:3px solid var(--timeline-accent);
     border-radius:16px;
-    background:#fcfbf8;
+    background:linear-gradient(110deg,var(--timeline-tint),#fff 85%);
     box-shadow:0 6px 20px rgba(39,44,49,.035);
 }
 
@@ -686,6 +760,10 @@ section {
     color:var(--cardinal);
     font-size:.88rem;
     font-weight:650;
+}
+
+.timeline-item .company {
+    color:var(--timeline-accent);
 }
 
 .duration {
@@ -722,7 +800,7 @@ section {
     grid-template-columns:1.4fr 1fr;
     gap:48px;
     align-items:center;
-    background:var(--dark);
+    background:linear-gradient(120deg,#233444,#254a50);
     color:#fff;
     padding:42px;
     border-radius:24px;
@@ -783,6 +861,10 @@ section {
 .resume-note {
     font-size:.75rem;
     color:#b9c0ca;
+}
+
+.contact {
+    background:linear-gradient(135deg,#fff8ef,var(--peach));
 }
 
 .contact-content {
@@ -1018,6 +1100,9 @@ section {
         grid-template-columns:1fr;
     }
     .project-card {
+        padding:24px;
+    }
+    .featured-project {
         padding:24px;
     }
     .about-content {
