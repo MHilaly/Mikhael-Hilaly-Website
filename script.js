@@ -33,7 +33,7 @@ if ('IntersectionObserver' in window) {
         const visible = entries.filter(entry => entry.isIntersecting);
         if (!visible.length) return;
         const id = visible[visible.length - 1].target.id;
-        const current = ['more-projects', 'other-projects'].includes(id) ? 'projects' : id;
+        const current = ['wbb-project', 'more-projects', 'other-projects'].includes(id) ? 'projects' : id === 'leadership' ? 'about' : id;
         links.forEach(link => {
             if (link.hash === `#${current}`) link.setAttribute('aria-current', 'location');
             else link.removeAttribute('aria-current');
