@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import json
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
@@ -74,8 +75,16 @@ def validate():
                 file = ROOT / unquote(link.path)
                 if not file.is_file():
                     errors.append(f'Missing local asset: {value}')
+                elif not file.read_bytes().strip():
+                    errors.append(f'Empty local asset: {value}')
                 elif file.suffix.lower() == '.pdf' and not file.read_bytes().startswith(b'%PDF-'):
                     errors.append(f'Invalid PDF signature: {value}')
+                elif file.suffix.lower() == '.svg':
+                    try:
+                        if not ET.parse(file).getroot().tag.endswith('svg'):
+                            errors.append(f'Invalid SVG root: {value}')
+                    except ET.ParseError:
+                        errors.append(f'Invalid SVG markup: {value}')
             elif link.fragment and link.fragment not in ids:
                 errors.append(f'Broken anchor: {value}')
     required_metadata = {'description', 'og:title', 'og:description', 'og:url', 'og:image', 'twitter:card', 'twitter:image'}
