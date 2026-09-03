@@ -7,7 +7,7 @@ A professional portfolio focused on data analytics, applied AI, and opportunitie
 ## Files
 
 - `index.html`: all public content, navigation, project links, resume links, and social/search metadata.
-- `styles.css`: USC cardinal/gold design, responsive layout, focus states, and reduced-motion support.
+- `styles.css`: warm ivory surfaces, wine/gold accents, connected experience timelines, responsive layout, focus states, and reduced-motion support.
 - `script.js`: accessible mobile navigation, active section indication, and Formspree submission handling.
 - `assets/Mikhael_Hilaly_Resume.pdf`: the current public resume, used by every resume button.
 - `Mikhael_Hilaly_Resume.docx.pdf`: compatibility copy of the current resume for previously shared links.
@@ -43,7 +43,7 @@ The checks cover HTML structure, unique anchors, linked local files, PDF signatu
 
 ## Updating content
 
-1. Preserve the cross-industry career positioning: lead with data analytics, applied AI, business problem-solving, and transferable skills. Keep sports as a project domain and personal interest. Verify new facts against the latest resume or project source. Do not invent results, employment dates, or links. A fellowship with an expected completion date must remain described as in progress.
+1. Preserve the cross-industry career positioning: lead with data analytics, applied AI, business problem-solving, and transferable skills. Keep sports as a project domain and personal interest. Preserve the visible chronological work-experience timeline, including COOP, Scoop, PlanYear, and Galileo; use dates from the approved source. Verify new facts against the latest resume or project source. Do not invent results, employment dates, or links. A fellowship with an expected completion date must remain described as in progress.
 2. Add new research to the featured section, move the previous feature into the project collection, and keep the total analytics-project count consistent. Include a research question, clear result, methods, and a working source link. State model limitations next to performance metrics.
 3. Replace both current resume copies with the same approved PDF. Verify it opens, then align experience, education, skills, and contact details in the HTML. Do not overwrite the other archived PDFs unless requested.
 4. Preserve section IDs (`home`, `projects`, `about`, `experience`, `resume`, `contact`) and the GitHub Pages address. Keep personal contact details intentional and avoid adding analytics/tracking services without a request.
@@ -64,7 +64,7 @@ The checks cover HTML structure, unique anchors, linked local files, PDF signatu
 - USC Chess Club sports website: https://mhilaly.github.io/Chess-Club-IM-Sports/ — linked from the profile and confirmed available.
 - The approved resume takes priority when dates differ: the quarterback and NBA position-prediction projects retain the resume's dates. Public LinkedIn did not expose the Palo Alto Investors title, dates, or responsibilities, so no role was inferred from the employer name. The supplied resume PDF remains unchanged.
 
-The September 2026 narrative refresh puts AI/data experience and business projects before sports research. Career interests reflect the user’s explicit direction; professional claims and project results retain their existing sources. The approved resume PDF has not been rewritten.
+The September 2026 narrative refresh puts AI/data experience and business projects before sports research. Career interests reflect the user’s explicit direction; professional claims and project results retain their existing sources. The approved resume PDF has not been rewritten. The subsequent visual refresh uses warmer surfaces and connected, dated role cards; Galileo remains part of the main work-experience timeline.
 
 ## Contact form
 
