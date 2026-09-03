@@ -7,7 +7,7 @@ A professional portfolio focused on data analytics, applied AI, and opportunitie
 ## Files
 
 - `index.html`: all public content, navigation, project links, resume links, and social/search metadata.
-- `styles.css`: warm ivory surfaces, wine/gold/teal/blue accents, connected experience timelines, responsive layout, focus states, and reduced-motion support.
+- `styles.css`: warm ivory surfaces, wine/gold/teal/blue accents, a connected work-experience timeline and education cards, responsive layout, focus states, and reduced-motion support.
 - `script.js`: accessible mobile navigation, active section indication, and Formspree submission handling.
 - `assets/Mikhael_Hilaly_Resume.pdf`: the current public resume, used by every resume button.
 - `Mikhael_Hilaly_Resume.docx.pdf`: compatibility copy of the current resume for previously shared links.
@@ -43,10 +43,10 @@ The checks cover HTML structure, unique anchors, linked local files, PDF signatu
 
 ## Updating content
 
-1. Preserve the cross-industry career positioning: lead with data analytics, applied AI, business problem-solving, and transferable skills. Keep sports as a project domain and personal interest. Preserve the visible chronological work-experience timeline, including COOP, Scoop, PlanYear, and Galileo; use dates from the approved source. Verify new facts against the latest resume or project source. Do not invent results, employment dates, or links. A fellowship with an expected completion date must remain described as in progress.
+1. Preserve the cross-industry career positioning: lead with data analytics, applied AI, business problem-solving, and transferable skills. Keep sports as a project domain and personal interest. Use a timeline only for work experience: Scoop, PlanYear, and Galileo. COOP is education/training, alongside USC and Sports Business Classroom in Education & professional development. Present those programs and the separate Chess Club leadership role as ordinary cards. Use dates from the approved source. Verify new facts against the latest resume or project source. Do not invent results, employment dates, or links. A fellowship with an expected completion date must remain described as in progress.
 2. Keep WBB inside the Sports analytics section, with all sports projects above Business & nonprofit analytics. Add new research to the featured area, move the previous feature into the project collection, and keep the total analytics-project count consistent. Include a research question, clear result, methods, and a working source link. State model limitations next to performance metrics.
 3. Replace both current resume copies with the same approved PDF. Verify it opens, then align experience, education, skills, and contact details in the HTML. Do not overwrite the other archived PDFs unless requested.
-4. Preserve section IDs (`home`, `projects`, `about`, `experience`, `resume`, `contact`) and the GitHub Pages address. Keep personal contact details intentional and avoid adding analytics/tracking services without a request.
+4. Preserve section IDs (`home`, `projects`, `about`, `experience`, `education`, `leadership`, `resume`, `contact`) and the GitHub Pages address. Keep personal contact details intentional and avoid adding analytics/tracking services without a request.
 5. Run validation, review the diff, commit, and push to `main`. GitHub Pages publishes the updated branch through the existing configuration. Check the public page and PDF after deployment; a successful push alone is not evidence that Pages has finished.
 6. If a release needs to be undone, revert its commit and publish the revert. Do not force-push shared history.
 
@@ -64,7 +64,7 @@ The checks cover HTML structure, unique anchors, linked local files, PDF signatu
 - USC Chess Club sports website: https://mhilaly.github.io/Chess-Club-IM-Sports/ — linked from the profile and confirmed available.
 - The approved resume takes priority when dates differ: the quarterback and NBA position-prediction projects retain the resume's dates. Public LinkedIn did not expose the Palo Alto Investors title, dates, or responsibilities, so no role was inferred from the employer name. The supplied resume PDF remains unchanged.
 
-The September 2026 narrative leads with AI/data experience. The project collection presents Sports analytics first, with WBB as its featured article and the other four sports projects beneath it; the hotel and nonprofit projects follow in Business & nonprofit analytics. Career interests reflect the user’s explicit direction; professional claims and project results retain their existing sources. The approved resume PDF has not been rewritten. The subsequent visual refresh uses warmer surfaces and connected, dated role cards; Galileo remains part of the main work-experience timeline.
+The September 2026 narrative leads with AI/data experience. The project collection presents Sports analytics first, with WBB as its featured article and the other four sports projects beneath it; the hotel and nonprofit projects follow in Business & nonprofit analytics. Career interests reflect the user’s explicit direction; professional claims and project results retain their existing sources. The approved resume PDF has not been rewritten. The subsequent visual refresh uses warmer surfaces and connected, dated role cards; The work-experience timeline contains Scoop, PlanYear, and Galileo. USC, COOP, and SBC appear as education/development cards; Chess Club is a separate leadership card. COOP is not employment.
 
 ## Contact form
 

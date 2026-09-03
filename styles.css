@@ -790,6 +790,86 @@ section {
     margin-bottom:8px;
 }
 
+/* Education and leadership use cards; the timeline is reserved for jobs. */
+.education {
+    background:#fff6e5;
+}
+
+.education-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:24px;
+}
+
+.education-card,.leadership-card {
+    --credential-accent:var(--cardinal);
+    min-width:0;
+    padding:28px;
+    border:1px solid var(--line);
+    border-top:4px solid var(--credential-accent);
+    border-radius:18px;
+    background:#fff;
+    box-shadow:var(--soft-shadow);
+}
+
+.education-card:nth-child(2) {
+    --credential-accent:var(--blue);
+}
+
+.education-card:nth-child(3) {
+    --credential-accent:var(--teal);
+}
+
+.credential-label {
+    color:var(--credential-accent);
+    font-size:.66rem;
+    font-weight:750;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.education-card h3,.leadership-card h3 {
+    font-size:1.12rem;
+    line-height:1.35;
+    margin-bottom:8px;
+}
+
+.credential-subtitle {
+    color:var(--credential-accent);
+    font-size:.84rem;
+    font-weight:650;
+}
+
+.credential-date {
+    color:var(--muted);
+    font-size:.76rem;
+    margin:7px 0 18px;
+}
+
+.credential-details {
+    padding-left:18px;
+    color:#555c64;
+    font-size:.88rem;
+}
+
+.credential-details li {
+    padding-left:3px;
+    margin-bottom:9px;
+}
+
+.credential-details li:last-child {
+    margin-bottom:0;
+}
+
+.leadership {
+    background:#fff;
+}
+
+.leadership-card {
+    max-width:960px;
+}
+
 /* Resume and contact */
 .resume {
     background:var(--paper);
@@ -1018,6 +1098,9 @@ section {
 }
 
 @media(max-width:1000px) {
+    .education-grid {
+        grid-template-columns:1fr;
+    }
     .hero-content {
         gap:35px;
     }
