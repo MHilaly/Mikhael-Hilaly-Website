@@ -58,6 +58,10 @@ The checks cover HTML structure, unique anchors, linked local files, PDF signatu
 - NFL project: https://github.com/MHilaly/QB-Mobility-Analysis
 - Resume: `Mikhael_Hilaly_Resume_Final_Polished_Linked.pdf`, latest local version dated August 31, 2026. Published without changing the document.
 - Other project summaries and older leadership experience: retained from the previous website.
+- LinkedIn profile: https://www.linkedin.com/in/mhilaly — public profile reviewed September 2026 for six Dean's List honors, volunteering, the karate credential, and the NBA CBA, field-goal, and Peregrine project dates.
+- LinkedIn graduation post: https://www.linkedin.com/posts/mhilaly_in-january-of-2023-i-moved-across-the-country-activity-7462223524947013632-GdLs — degree wording, two intramural football championships, and team leadership.
+- USC Chess Club sports website: https://mhilaly.github.io/Chess-Club-IM-Sports/ — linked from the profile and confirmed available.
+- The approved resume takes priority when dates differ: the quarterback and NBA position-prediction projects retain the resume's dates. Public LinkedIn did not expose the Palo Alto Investors title, dates, or responsibilities, so no role was inferred from the employer name. The supplied resume PDF remains unchanged.
 
 ## Contact form
 
