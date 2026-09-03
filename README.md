@@ -1,162 +1,68 @@
-# Mikhael Hilaly - Personal Website
+# Mikhael Hilaly — personal portfolio
 
-A sleek, professional personal website showcasing Mikhael's skills, experience, and projects in business and data science.
+Live site: https://mhilaly.github.io/Mikhael-Hilaly-Website/
 
-## 🚀 Features
+A static HTML, CSS, and JavaScript portfolio hosted at the existing GitHub Pages address. No Cursor account, paid development service, framework, or package installation is needed to maintain it.
 
-- **Modern Design**: Clean, professional layout with USC cardinal color scheme
-- **Responsive**: Fully mobile-responsive design
-- **Interactive**: Smooth animations, hover effects, and scroll interactions
-- **Professional Sections**: Home, About, Experience, Projects, Resume, and Contact
-- **Contact Form**: Functional contact form with validation
-- **SEO Optimized**: Clean HTML structure for better search engine visibility
+## Files
 
-## 📁 File Structure
+- `index.html`: all public content, navigation, project links, resume links, and social/search metadata.
+- `styles.css`: USC cardinal/gold design, responsive layout, focus states, and reduced-motion support.
+- `script.js`: accessible mobile navigation, active section indication, and Formspree submission handling.
+- `assets/Mikhael_Hilaly_Resume.pdf`: the current public resume, used by every resume button.
+- `Mikhael_Hilaly_Resume.docx.pdf`: compatibility copy of the current resume for previously shared links.
+- `assets/profile.webp`: optimized copy of the original portrait; the original JPEG remains available.
+- `assets/wbb-contender-projections.png`: chart from the WBB project.
+- `assets/social-preview.png`: branded social sharing image.
+- `assets/favicon.svg`: MH favicon.
+- `scripts/validate.py`: dependency-free content and asset checks.
+- `.github/workflows/validate.yml`: validation on pushes to main and pull requests.
 
-```
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and responsive design
-├── script.js           # JavaScript functionality
-├── profile-picture.jpg # Profile photo
-└── README.md           # This file
-```
+The other original root-level resume PDFs and photographs are retained for existing links. New links should always use the canonical PDF in `assets/`.
 
-## 🛠️ Setup Instructions
+## Local development
 
-1. **Download/Clone**: All files should be in the same directory
-2. **Open**: Open `index.html` in your web browser
-3. **Deploy**: Upload all files to your web hosting service
+From this repository directory:
 
-## 🎨 Customization Guide
-
-### Colors
-The website uses USC cardinal (#990000) as the primary color. To change colors, edit these CSS variables in `styles.css`:
-
-```css
-/* Primary color (USC Cardinal) */
---primary-color: #990000;
---primary-light: #cc0000;
+```sh
+python -m http.server 4173 --bind 127.0.0.1
 ```
 
-### Content Updates
+Open http://127.0.0.1:4173. Edit the source and refresh the page. All site assets use relative paths so the GitHub Pages repository subpath continues to work.
 
-#### Personal Information
-- Update contact information in the Contact section
-- Modify the hero title and subtitle in `index.html`
-- Change the About section content
+Validate before publishing:
 
-#### Experience & Projects
-- Edit the timeline items in the Experience section
-- Update project details in the Projects section
-- Add or remove experience/project cards as needed
+```sh
+python scripts/validate.py
+node --check script.js
+node --test scripts/contact-form.test.cjs
+```
 
-#### Skills
-- Modify the skills grid in the About section
-- Add or remove skill categories and tags
+The checks cover HTML structure, unique anchors, linked local files, PDF signatures, form labels, image dimensions, social metadata, JavaScript syntax, and contact form failure handling. They do not submit a real contact message. Visual browser checks and end-to-end delivery require separate manual review.
 
-### Profile Photo
-- Replace `profile-picture.jpg` with your own photo
-- Ensure the image is square and high quality (recommended: 400x400px or larger)
+## Updating content
 
-## 📱 Responsive Design
+1. Verify new facts against the latest resume or project source. Do not invent results, employment dates, or links. A fellowship with an expected completion date must remain described as in progress.
+2. Add new research to the featured section, move the previous feature into the project collection, and keep the sports-project count consistent. Include a research question, clear result, methods, and a working source link. State model limitations next to performance metrics.
+3. Replace both current resume copies with the same approved PDF. Verify it opens, then align experience, education, skills, and contact details in the HTML. Do not overwrite the other archived PDFs unless requested.
+4. Preserve section IDs (`home`, `projects`, `about`, `experience`, `resume`, `contact`) and the GitHub Pages address. Keep personal contact details intentional and avoid adding analytics/tracking services without a request.
+5. Run validation, review the diff, commit, and push to `main`. GitHub Pages publishes the updated branch through the existing configuration. Check the public page and PDF after deployment; a successful push alone is not evidence that Pages has finished.
+6. If a release needs to be undone, revert its commit and publish the revert. Do not force-push shared history.
 
-The website is fully responsive and works on:
-- Desktop computers
-- Tablets
-- Mobile phones
-- All modern browsers
+## Content sources for the September 2026 update
 
-## 🔧 Technical Features
+- WBB project: https://github.com/MHilaly/usc-womens-basketball-analytics
+- WBB article: https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/
+- WBB model: 3,607 Division I team-seasons, 22 preseason features, Ridge regression, rolling validation on 1,990 held-out observations, MAE 4.63 SRS points, USC projection 35.53 SRS. This is a team-strength estimate, not a title probability.
+- WBB chart: `figures/model-contender-projections.png` from the project, by Mikhael Hilaly. Other teams in the chart are the four modeled contenders, not a full Division I ranking.
+- NFL project: https://github.com/MHilaly/QB-Mobility-Analysis
+- Resume: `Mikhael_Hilaly_Resume_Final_Polished_Linked.pdf`, latest local version dated August 31, 2026. Published without changing the document.
+- Other project summaries and older leadership experience: retained from the previous website.
 
-### JavaScript Functionality
-- **Mobile Navigation**: Hamburger menu for mobile devices
-- **Smooth Scrolling**: Smooth navigation between sections
-- **Scroll Animations**: Elements fade in as you scroll
-- **Contact Form**: Form validation and submission handling
-- **Active Navigation**: Highlights current section in navigation
-- **Loading Animation**: Professional loading screen
+## Contact form
 
-### CSS Features
-- **Modern Layout**: CSS Grid and Flexbox for responsive design
-- **Animations**: Smooth transitions and hover effects
-- **Typography**: Clean, readable fonts (Inter)
-- **Shadows & Effects**: Subtle shadows and rounded corners
-- **Color Scheme**: USC cardinal with complementary colors
+The existing endpoint is `https://formspree.io/f/xanjbojz`. Native POST works without JavaScript. JavaScript adds an in-page status, duplicate-send prevention, and a timeout. A successful HTTP response is required before showing success or clearing the form. On failure, entered text stays available and the visitor can use the email link. Changes to the Formspree account or email delivery must be verified in that service; local validation does not prove inbox delivery.
 
-## 📧 Contact Form
+## Future maintenance
 
-The contact form includes:
-- Name, email, subject, and message fields
-- Client-side validation
-- Success/error notifications
-- Form reset after successful submission
-
-**Note**: The form currently shows a success message but doesn't actually send emails. To make it functional, you'll need to:
-1. Set up a backend service (e.g., Netlify Forms, Formspree)
-2. Update the form action and method attributes
-3. Configure email delivery
-
-## 🚀 Deployment Options
-
-### Free Hosting Services
-- **GitHub Pages**: Upload to a GitHub repository
-- **Netlify**: Drag and drop deployment
-- **Vercel**: Connect your GitHub repository
-- **Firebase Hosting**: Google's hosting service
-
-### Custom Domain
-- Purchase a domain (e.g., mikhaelhilaly.com)
-- Configure DNS settings with your hosting provider
-- Update the domain in your hosting settings
-
-## 📊 SEO Optimization
-
-The website includes:
-- Semantic HTML structure
-- Meta tags for social sharing
-- Clean URL structure
-- Fast loading times
-- Mobile-friendly design
-
-## 🎯 Target Audience
-
-This website is designed for:
-- **Recruiters** looking for data analytics talent
-- **Hiring Managers** in consulting and business strategy
-- **Sports Analytics** professionals
-- **Networking** connections in the business world
-
-## 📈 Analytics (Optional)
-
-To track website visitors, consider adding:
-- Google Analytics
-- Google Search Console
-- LinkedIn profile views tracking
-
-## 🔄 Updates & Maintenance
-
-### Regular Updates
-- Keep experience and projects current
-- Update skills as you learn new technologies
-- Refresh profile photo periodically
-- Monitor and respond to contact form submissions
-
-### Content Strategy
-- Add new projects as you complete them
-- Update experience with new roles
-- Keep skills section current with latest technologies
-- Consider adding a blog section for thought leadership
-
-## 📞 Support
-
-For questions or customization help:
-- Email: hilaly@usc.edu
-- LinkedIn: www.linkedin.com/in/mhilaly
-
-## 📄 License
-
-This website template is created for Mikhael Hilaly's personal use. Feel free to customize and modify as needed.
-
----
-
-**Built with ❤️ for showcasing business and data science expertise** 
+This repository is the source of truth for continued development in Codex or any editor. Automated validation runs when code changes. It does not autonomously monitor new projects or revise career claims; future content updates should be grounded in the user's supplied material.

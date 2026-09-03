@@ -3,227 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikhael Hilaly - Sports Analytics Professional</title>
+    <title>Mikhael Hilaly | Sports Analytics &amp; Data Science</title>
+    <meta name="description" content="Sports analytics and data science by Mikhael Hilaly. Explore USC women's basketball research, NFL quarterback analysis, and NBA roster modeling.">
+    <meta name="theme-color" content="#0d1117">
+    <link rel="canonical" href="https://mhilaly.github.io/Mikhael-Hilaly-Website/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mhilaly.github.io/Mikhael-Hilaly-Website/">
+    <meta property="og:title" content="Mikhael Hilaly | Sports Analytics &amp; Data Science">
+    <meta property="og:description" content="Better questions. Better sports decisions. Research across women's college basketball, the NFL, and the NBA.">
+    <meta property="og:image" content="https://mhilaly.github.io/Mikhael-Hilaly-Website/assets/social-preview.png">
+    <meta property="og:image:alt" content="Mikhael Hilaly — Sports Analytics &amp; Data Science">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mikhael Hilaly | Sports Analytics &amp; Data Science">
+    <meta name="twitter:description" content="Research across women's college basketball, the NFL, and the NBA.">
+    <meta name="twitter:image" content="https://mhilaly.github.io/Mikhael-Hilaly-Website/assets/social-preview.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mikhael Hilaly","url":"https://mhilaly.github.io/Mikhael-Hilaly-Website/","sameAs":["https://www.linkedin.com/in/mhilaly","https://github.com/MHilaly"],"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Southern California"},"knowsAbout":["Sports analytics","Data science","Roster construction","Statistical modeling"]}</script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">MH</a>
+                <a href="#home" aria-label="Mikhael Hilaly, home">MH<span class="logo-dot">.</span></a>
             </div>
-            <ul class="nav-menu">
+            <button class="hamburger" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation" hidden>
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#resume" class="nav-link">Resume</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </div>
     </nav>
 
+    <main id="main-content" tabindex="-1">
     <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <span class="hero-badge"><i class="fas fa-basketball"></i> Sports Analytics</span>
-                    <h1 class="hero-title">Hi, I'm Mikhael Hilaly — Turning Game Data Into Winning Decisions</h1>
-                    <p class="hero-subtitle">USC graduate pursuing a career in sports analytics. I combine statistical modeling, machine learning, and sports business strategy to help teams evaluate talent, build rosters, and gain a competitive edge.</p>
+                    <span class="hero-badge"><i class="fas fa-basketball" aria-hidden="true"></i> Sports Analytics</span>
+                    <h1 class="hero-title">Mikhael Hilaly<span class="name-period">.</span><br><span class="hero-statement">Better questions.<br>Better sports decisions.</span></h1>
+                    <p class="hero-subtitle">I turn sports data into clear, testable insights about players and teams. USC Marshall graduate with a Data Science minor, focused on roster construction, player evaluation, and the decisions behind the game.</p>
                     <div class="hero-stats">
                         <div class="hero-stat">
                             <span class="hero-stat-number">5</span>
                             <span class="hero-stat-label">Sports Projects</span>
                         </div>
                         <div class="hero-stat">
-                            <span class="hero-stat-number">NBA · NFL</span>
-                            <span class="hero-stat-label">Leagues Studied</span>
+                            <span class="hero-stat-number">NBA · NFL · WBB</span>
+                            <span class="hero-stat-label">Areas of Research</span>
                         </div>
                         <div class="hero-stat">
-                            <span class="hero-stat-number">SBC</span>
-                            <span class="hero-stat-label">NBA Summer League</span>
+                            <span class="hero-stat-number">Python · SQL</span>
+                            <span class="hero-stat-label">From Data to Decisions</span>
                         </div>
                     </div>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">See My Analytics Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        <a href="#projects" class="btn btn-primary">Explore My Latest Project</a>
+                        <a href="assets/Mikhael_Hilaly_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Resume <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="profile-picture.jpg" alt="Mikhael Hilaly" class="profile-photo">
+                    <img src="assets/profile.webp" alt="Mikhael Hilaly" class="profile-photo" width="700" height="1050" fetchpriority="high" decoding="async">
+                    <p class="photo-caption">USC Marshall · Business &amp; Data Science</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section id="projects" class="featured-project">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="graduation-gallery">
-                    <img src="grad1.jfif" alt="Mikhael Hilaly at USC commencement" class="graduation-photo">
-                    <img src="gard2.jfif" alt="Mikhael Hilaly at USC with Traveler" class="graduation-photo">
-                </div>
-                <div class="about-text">
-                    <p>I'm a USC graduate with a Bachelor's in Business Administration from the Marshall School of Business and a Data Science minor — and I'm building a career in <strong>sports analytics</strong>. My goal is to work in an NBA or NFL front office, using data to evaluate players, optimize roster construction, and inform in-game strategy.</p>
-                    <p>From NFL Big Data Bowl research to NBA roster modeling under the new CBA, my projects focus on the questions teams actually face. At USC, I also competed in intramural sports and served as Director of Communications for the Chess Club, where I captained soccer, basketball, and football teams — keeping me close to the games I love analyzing.</p>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3><i class="fas fa-basketball"></i> Sports Analytics</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Player Evaluation</span>
-                                <span class="skill-tag">Roster Construction</span>
-                                <span class="skill-tag">Play-by-Play Analysis</span>
-                                <span class="skill-tag">Salary Cap Strategy</span>
-                                <span class="skill-tag">Sports Business</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3><i class="fas fa-code"></i> Programming & Tools</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">R</span>
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">NoSQL</span>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">C++</span>
-                                <span class="skill-tag">Machine Learning</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3><i class="fas fa-chart-line"></i> Data & Modeling</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Statistical Analysis</span>
-                                <span class="skill-tag">Machine Learning</span>
-                                <span class="skill-tag">Data Visualization</span>
-                                <span class="skill-tag">Predictive Modeling</span>
-                                <span class="skill-tag">A/B Testing</span>
-                            </div>
-                        </div>
+            <p class="eyebrow">Latest project · August 2026 · Women's college basketball</p>
+            <div class="featured-layout">
+                <div>
+                    <h2>Can USC build a championship team around JuJu Watkins?</h2>
+                    <p class="featured-intro">A data-driven case for USC women's basketball in 2026–27, connecting roster construction, offensive workload, and a validated model of team strength.</p>
+                    <dl class="featured-metrics">
+                        <div><dt>3,607</dt><dd>Division I team-seasons</dd></div>
+                        <div><dt>35.5</dt><dd>USC projected SRS</dd></div>
+                        <div><dt>4.63</dt><dd>Validation MAE</dd></div>
+                    </dl>
+                    <p class="method-note">Ridge regression · 22 preseason inputs · Rolling validation across 1,990 held-out team-seasons. SRS measures team strength; this is not a championship-probability forecast.</p>
+                    <div class="project-links">
+                        <a class="btn btn-primary" href="https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/">Read the full analysis <span aria-hidden="true">↗</span></a>
+                        <a class="text-link" href="https://github.com/MHilaly/usc-womens-basketball-analytics">Code &amp; methodology <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <p class="section-subtitle">Building sports analytics experience alongside data and business roles</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Product Tester and Marketing Intern</h3>
-                            <span class="company">Scoop Analytics</span>
-                            <span class="duration">June 2025 - August 2025</span>
-                        </div>
-                        <p class="location">San Francisco, CA</p>
-                        <ul>
-                            <li>Lead QA testing across 5+ product datasets (GA4, HubSpot, Client Engagement, Scoop usage), analyzing trends and building 20+ bar, line, pie, and heatmap visualizations to refine prompt performance, and surface product bugs—accelerating release cycles by 30%</li>
-                            <li>Creating 12+ scripted demo videos to be featured in Scoop's demos and YouTube content, partnering with marketing to translate complex data insights into engaging persona-specific use cases, increasing demo usage by 40%</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Student</h3>
-                            <span class="company">Sports Business Classroom (SBC)</span>
-                            <span class="duration">July 2026</span>
-                        </div>
-                        <p class="location">Los Angeles, CA</p>
-                        <ul>
-                            <li>Selected to participate in the NBA Summer League Sports Business Classroom, collaborating with peers to complete an expansion draft simulation that required balancing salary cap strategy, roster construction, and long-term competitive planning</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>AI Support Team Intern</h3>
-                            <span class="company">PlanYear</span>
-                            <span class="duration">June 2024 - Present</span>
-                        </div>
-                        <p class="location">Hoffman Estates, IL</p>
-                        <ul>
-                            <li>Co-developed comprehensive database of over 1,000 AI outputs leveraging Claude 3.5 on AWS, optimizing prompt creation processes and enhancing data accessibility and accuracy of prompts</li>
-                            <li>Customize 100+ prompts for Google Gemini to extract information from medical insurance benefit summaries with 99% accuracy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Director of Communications</h3>
-                            <span class="company">USC Chess Club</span>
-                            <span class="duration">May 2024 - May 2026</span>
-                        </div>
-                        <p class="location">Los Angeles, CA</p>
-                        <ul>
-                            <li>Organized 5+ chess tournaments each semester, increasing participation by 15% through strategic planning, event promotion, and sponsor coordination, also managing social media (Instagram and Discord), growing follower engagement by 30% with regular updates</li>
-                            <li>Led and captained the Chess Club's soccer, basketball, and football teams, recruiting top talent, organizing strategic practices, and developing depth charts, resulting in winning seasons and several top 3 placements</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Team Leader - Engineering Projects</h3>
-                            <span class="company">Galileo</span>
-                            <span class="duration">June 2023 - August 2023</span>
-                        </div>
-                        <p class="location">Arlington Heights, IL</p>
-                        <ul>
-                            <li>Guided 30 campers aged 8-12 through construction of 50+ catapults and 70+ model cars during an 8-week summer camp, managing time and resources to foster creativity and teamwork</li>
-                            <li>Applied project management skills to oversee engineering activities for a team of 30 campers, resolving 90% of project issues on spot and ensuring completion of over 100 engineering projects, boosting camp's overall learning experience</li>
-                        </ul>
-                    </div>
-                </div>
+                <figure class="featured-figure">
+                    <a href="https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/" aria-label="Read the USC women's basketball title-case analysis">
+                        <img src="assets/wbb-contender-projections.png" alt="Projected SRS: South Carolina 53.8, UConn 47.9, Texas 42.3, and USC 35.5, with uncertainty intervals." width="2950" height="1418" loading="lazy" decoding="async">
+                    </a>
+                    <figcaption>USC sits fourth among the four modeled contenders. Chart from my USC Women's Basketball 2026–27 Title Case.</figcaption>
+                </figure>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="more-projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Sports Analytics Projects</h2>
-            <p class="section-subtitle">Research and modeling across the NBA and NFL — the core of my career path</p>
+            <h2 class="section-title">More sports analytics work</h2>
+            <p class="section-subtitle">Player evaluation, roster strategy, and performance under pressure.</p>
             <div class="projects-grid">
                 <div class="project-card project-card-sports">
                     <div class="project-header">
                         <div class="project-league nfl">NFL</div>
                         <h3>Are Pocket Passers Outdated? — NFL Quarterback Mobility Analysis</h3>
-                        <span class="project-date">2024 - 2025</span>
+                        <span class="project-date">September–November 2025</span>
                     </div>
-                    <p class="project-description">Quantified how quarterback mobility impacts offensive performance in the modern NFL, addressing whether mobile quarterbacks provide a measurable advantage over traditional pocket passers using NFL Big Data Bowl play-by-play data.</p>
+                    <p class="project-description">Quantified how quarterback mobility impacts offensive performance in the modern NFL, addressing whether mobile quarterbacks provide a measurable advantage over traditional pocket passers using NFL play-by-play data from 2020–2025.</p>
                     <div class="project-highlights">
                         <div class="highlight">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
                             <span>Mobile QBs: 7.3 vs 6.0 yards/play (p = 0.018)</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-calculator"></i>
+                            <i class="fas fa-calculator" aria-hidden="true"></i>
                             <span>Custom mobility score using scramble frequency & efficiency</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Mobility improves efficiency without increasing risk</span>
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Higher yards per play; similar explosive-play and bad-play rates</span>
                         </div>
                     </div>
                     <div class="project-tech">
@@ -231,6 +143,7 @@
                         <span class="tech-tag">Statistical Analysis</span>
                         <span class="tech-tag">Data Visualization</span>
                     </div>
+                    <a class="text-link project-source" href="https://github.com/MHilaly/QB-Mobility-Analysis">Explore the analysis &amp; code <span aria-hidden="true">↗</span></a>
                 </div>
 
                 <div class="project-card project-card-sports">
@@ -242,15 +155,15 @@
                     <p class="project-description">Built a stacked ensemble classification model to predict NBA player positions using performance data, addressing limitations of traditional position labels in modern basketball.</p>
                     <div class="project-highlights">
                         <div class="highlight">
-                            <i class="fas fa-chart-bar"></i>
+                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
                             <span>73% test accuracy with 2,000+ player-seasons</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-brain" aria-hidden="true"></i>
                             <span>Stacked ensemble with 15+ per-game and advanced metrics</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-eye" aria-hidden="true"></i>
                             <span>Confusion matrices & longitudinal visualizations</span>
                         </div>
                     </div>
@@ -270,15 +183,15 @@
                     <p class="project-description">Analyzed how the NBA's 2023 Collective Bargaining Agreement has reshaped optimal roster construction strategies under salary cap constraints using clustering, regression analysis, and significance testing.</p>
                     <div class="project-highlights">
                         <div class="highlight">
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
                             <span>Star-centric rosters outperform depth-focused teams</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
                             <span>Performance gap widens under new CBA</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-briefcase"></i>
+                            <i class="fas fa-briefcase" aria-hidden="true"></i>
                             <span>Data-backed recommendations for front offices</span>
                         </div>
                     </div>
@@ -299,15 +212,15 @@
                     <p class="project-description">Examined how pressure affects NFL kicker performance, challenging the assumption that experience alone determines clutch success using statistical comparisons across leverage situations.</p>
                     <div class="project-highlights">
                         <div class="highlight">
-                            <i class="fas fa-exclamation-triangle"></i>
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
                             <span>Statistically significant decrease in high-pressure kicks</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-clock" aria-hidden="true"></i>
                             <span>Kicker age has no meaningful impact on clutch performance</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-futbol"></i>
+                            <i class="fas fa-futbol" aria-hidden="true"></i>
                             <span>Situational context drives performance under pressure</span>
                         </div>
                     </div>
@@ -336,15 +249,15 @@
                     <p class="project-description">Evaluated the effectiveness of a nonprofit policy change affecting Extended Hospital Stay Grant recipients, with the goal of improving resource allocation and outcomes using statistical analysis and A/B testing.</p>
                     <div class="project-highlights">
                         <div class="highlight">
-                            <i class="fas fa-percentage"></i>
+                            <i class="fas fa-percentage" aria-hidden="true"></i>
                             <span>36% improvement in recipient prediction accuracy</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-test-tube"></i>
+                            <i class="fas fa-test-tube" aria-hidden="true"></i>
                             <span>A/B hypothesis testing on grant and survey data</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
                             <span>Actionable recommendations for program efficiency</span>
                         </div>
                     </div>
@@ -364,15 +277,15 @@
                     <p class="project-description">Consulting project to help hotels in Tokyo's Ginza district optimize pricing and forecast occupancy in a highly competitive market using custom datasets and machine learning models.</p>
                     <div class="project-highlights">
                         <div class="highlight">
-                            <i class="fas fa-trophy"></i>
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
                             <span>R² of 0.99 for occupancy, ADR, and RevPAR prediction</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-chart-bar"></i>
+                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
                             <span>XGBoost regression with scenario analysis</span>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign" aria-hidden="true"></i>
                             <span>Strategic insights into pricing optimization</span>
                         </div>
                     </div>
@@ -381,6 +294,152 @@
                         <span class="tech-tag">Machine Learning</span>
                         <span class="tech-tag">XGBoost</span>
                         <span class="tech-tag">Google APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="graduation-gallery">
+                    <img src="grad1.jfif" alt="Mikhael Hilaly at USC commencement" class="graduation-photo" width="800" height="1066" loading="lazy" decoding="async">
+                    <img src="gard2.jfif" alt="Mikhael Hilaly at USC with Traveler" class="graduation-photo" width="800" height="1066" loading="lazy" decoding="async">
+                </div>
+                <div class="about-text">
+                    <p>I'm a USC graduate with a Bachelor's in Business Administration from the Marshall School of Business and a Data Science minor — and I'm building a career in <strong>sports analytics</strong>. My goal is to work in an NBA or NFL front office, using data to evaluate players, optimize roster construction, and inform in-game strategy.</p>
+                    <p>From USC women's basketball title projections to NFL quarterback mobility and NBA roster modeling, my projects focus on the questions teams actually face. At USC, I also competed in intramural sports and served as Director of Communications for the Chess Club, where I captained soccer, basketball, and football teams — keeping me close to the games I love analyzing.</p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-basketball" aria-hidden="true"></i> Sports Analytics</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Player Evaluation</span>
+                                <span class="skill-tag">Roster Construction</span>
+                                <span class="skill-tag">Play-by-Play Analysis</span>
+                                <span class="skill-tag">Salary Cap Strategy</span>
+                                <span class="skill-tag">Sports Business</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-code" aria-hidden="true"></i> Programming & Tools</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">R</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">pandas &amp; NumPy</span>
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">Excel</span>
+                                <span class="skill-tag">scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Data & Modeling</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Statistical Analysis</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Data Visualization</span>
+                                <span class="skill-tag">Predictive Modeling</span>
+                                <span class="skill-tag">A/B Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Analytics training, professional experience, and leadership.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analytics Fellow</h3>
+                            <span class="company">COOP Careers</span>
+                            <span class="duration">Expected December 2026</span>
+                        </div>
+                        <p class="location">16-week fellowship</p>
+                        <ul>
+                            <li>Selected for a 200-hour fellowship developing skills in SQL, Python, Tableau, data cleaning, and visualization.</li>
+                            <li>Building communication and professional skills through training and client-based projects.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Director of Communications</h3>
+                            <span class="company">USC Chess Club</span>
+                            <span class="duration">May 2024–May 2026</span>
+                        </div>
+                        <p class="location">Los Angeles, CA</p>
+                        <ul>
+                            <li>Organized 20+ tournaments, increasing participation by 15% and social media engagement by 30% through event promotion and sponsor coordination with Chess.com.</li>
+                            <li>Captained intramural soccer, basketball, and football teams, coordinating recruiting, practices, and depth charts.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Participant</h3>
+                            <span class="company">Sports Business Classroom</span>
+                            <span class="duration">February 2026</span>
+                        </div>
+                        <p class="location">Los Angeles, CA</p>
+                        <ul>
+                            <li>Gained hands-on exposure to basketball operations, salary cap management, expansion drafts, and front-office decision-making through instruction from NBA and WNBA executives.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Product Tester and Marketing Intern</h3>
+                            <span class="company">Scoop Analytics</span>
+                            <span class="duration">June–August 2025</span>
+                        </div>
+                        <p class="location">San Francisco, CA</p>
+                        <ul>
+                            <li>Identified and documented 20+ product bugs by benchmarking new charts against validated outputs to catch data, rendering, and interface issues.</li>
+                            <li>Built and validated 100+ data visualizations across 5–10 chart types, checking numerical accuracy, functionality, and visual quality using customer data.</li>
+                            <li>Produced 10+ product demo videos for LinkedIn and YouTube, scripting and presenting analytics use cases and customer insights.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Support and Operations Intern</h3>
+                            <span class="company">PlanYear</span>
+                            <span class="duration">May–August 2024</span>
+                        </div>
+                        <p class="location">San Francisco, CA</p>
+                        <ul>
+                            <li>Customized 100+ AI prompts across insurance carriers and plan types, improving information-extraction accuracy to approximately 99% for employee benefits data.</li>
+                            <li>Generated and reviewed 1,000+ outputs using Google Gemini and Claude, identifying failure patterns and refining prompts for consistent data quality.</li>
+                            <li>Cleaned and standardized 30+ benefits spreadsheets in Excel, correcting values, formatting inconsistencies, and review flags.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Team Leader — Engineering Projects</h3>
+                            <span class="company">Galileo</span>
+                            <span class="duration">June–August 2023</span>
+                        </div>
+                        <p class="location">Arlington Heights, IL</p>
+                        <ul>
+                            <li>Guided 30 campers aged 8–12 through hands-on engineering projects during an eight-week summer camp.</li>
+                            <li>Coordinated materials, activities, and problem-solving to help campers complete more than 100 engineering projects.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -398,33 +457,35 @@
                         <p class="resume-tagline">Aspiring Sports Analytics Professional</p>
                         <p>B.S. Business Administration | Data Science Minor</p>
                         <p>University of Southern California — Marshall School of Business</p>
-                        <p>Graduated: May 2026 · Cum Laude</p>
+                        <p>Graduated: May 2026 · Dean’s List</p>
+                        <p>COOP Data Analytics Fellowship · Expected December 2026</p>
                     </div>
                     <div class="resume-highlights">
                         <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                             <span>GPA: 3.64</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Chicago, Illinois</span>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Hoffman Estates, Illinois</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                             <span>(847) 262-1011</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <span>Mikhael@hilaly.com</span>
                         </div>
                     </div>
                 </div>
                 <div class="resume-actions">
-                    <a href="Mikhael_Hilaly_Resume.docx.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" download="Mikhael_Hilaly_Resume.pdf">
-                        <i class="fas fa-download"></i>
+                    <a href="assets/Mikhael_Hilaly_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" download="Mikhael_Hilaly_Resume.pdf">
+                        <i class="fas fa-download" aria-hidden="true"></i>
                         Download Full Resume
                     </a>
-                    <p class="resume-note">Click to download the complete PDF version of my resume</p>
+                    <a class="text-link" href="assets/Mikhael_Hilaly_Resume.pdf" target="_blank" rel="noopener noreferrer">Open PDF in a new tab</a>
+                    <p class="resume-note">Education, experience, projects, and technical skills.</p>
                 </div>
             </div>
         </div>
@@ -434,55 +495,64 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Let's Talk Sports Analytics</h2>
-            <p class="section-subtitle">Open to opportunities in NBA & NFL analytics, sports business, and data-driven front office roles</p>
+            <p class="section-subtitle">Interested in sports analytics, data science, and sports business opportunities. Let’s connect.</p>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                         <div>
                             <h3>Email</h3>
                             <a href="mailto:Mikhael@hilaly.com">Mikhael@hilaly.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                         <div>
                             <h3>LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/mhilaly" target="_blank">linkedin.com/in/mhilaly</a>
+                            <a href="https://www.linkedin.com/in/mhilaly" target="_blank" rel="noopener noreferrer">linkedin.com/in/mhilaly</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <div>
                             <h3>Location</h3>
-                            <p>Los Angeles, CA</p>
+                            <p>Hoffman Estates, IL</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <p class="form-intro">Have a question about a project or an opportunity in mind?</p>
                     <form id="contactForm" action="https://formspree.io/f/xanjbojz" method="POST">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
+                            <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
+                            <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
                             Send Message
                         </button>
+                        <p id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                        <p class="form-fallback">Prefer email? <a href="mailto:mikhael@hilaly.com">mikhael@hilaly.com</a></p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -492,11 +562,12 @@
                     <p>Sports Analytics Professional</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/mhilaly" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://github.com/MHilaly" class="social-link" aria-label="Mikhael Hilaly on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/mhilaly" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Mikhael Hilaly on LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="mailto:Mikhael@hilaly.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:Mikhael@hilaly.com" class="social-link" aria-label="Email Mikhael Hilaly">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -506,6 +577,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
-</html> 
+</html>
