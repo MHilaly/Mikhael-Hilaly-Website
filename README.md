@@ -12,7 +12,8 @@ A professional portfolio focused on data analytics, applied AI, and opportunitie
 - `assets/Mikhael_Hilaly_Resume.pdf`: the current public resume, used by every resume button.
 - `Mikhael_Hilaly_Resume.docx.pdf`: compatibility copy of the current resume for previously shared links.
 - `assets/profile.webp`: optimized copy of the original portrait; the original JPEG remains available.
-- `assets/wbb-contender-projections.png`: chart from the WBB project.
+- `assets/wbb-team-strength-trend.png`: cardinal-and-gold historical team-strength chart used as the WBB project cover.
+- `assets/wbb-contender-projections.png`: previous WBB cover, retained for existing links.
 - `assets/social-preview-data-ai.png`: current social sharing image for the data and AI positioning.
 - `assets/social-preview.png`: retained previous sharing image for existing links.
 - `assets/favicon.svg`: MH favicon.
@@ -55,9 +56,9 @@ The checks cover HTML structure, unique anchors, linked local files, PDF signatu
 - WBB project: https://github.com/MHilaly/usc-womens-basketball-analytics
 - WBB article: https://usc-2027-title-case.mikhael-hilaly.chatgpt.site/
 - WBB model: 3,607 Division I team-seasons, 22 preseason features, Ridge regression, rolling validation on 1,990 held-out observations, MAE 4.63 SRS points, USC projection 35.53 SRS. This is a team-strength estimate, not a title probability.
-- WBB chart: `figures/model-contender-projections.png` from the project, by Mikhael Hilaly. Other teams in the chart are the four modeled contenders, not a full Division I ranking.
+- WBB cover chart: `figures/usc-srs-trend.png` from project commit `494a71235346459d0a2fe941839a2cb072e81263`, by Mikhael Hilaly. Shows historical SRS for 2022–23 through 2025–26, highlighting Watkins’ active seasons. This descriptive comparison does not isolate her causal impact; rosters and schedules changed.
 - NFL project: https://github.com/MHilaly/QB-Mobility-Analysis
-- Resume: `Mikhael_Hilaly_Resume_Final_Polished_Linked.pdf`, latest local version dated August 31, 2026. Published without changing the document.
+- Resume: `Mikhael_Hilaly_Resume_Final_Polished_Linked.pdf`, user-supplied version dated August 31, 2026, reverified on September 14, 2026. Both public copies match the supplied PDF byte for byte (SHA-256 `1f429482cdbbae70e6246fdcb2831eecce770a5b26b42e047c844c3bfe59856b`). Published without changing the document.
 - Other project summaries and older leadership experience: retained from the previous website.
 - LinkedIn profile: https://www.linkedin.com/in/mhilaly — public profile reviewed September 2026 for six Dean's List honors, volunteering, the karate credential, and the NBA CBA, field-goal, and Peregrine project dates.
 - LinkedIn graduation post: https://www.linkedin.com/posts/mhilaly_in-january-of-2023-i-moved-across-the-country-activity-7462223524947013632-GdLs — degree wording, two intramural football championships, and team leadership.
