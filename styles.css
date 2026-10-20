@@ -477,7 +477,7 @@ section {
     --project-accent:var(--teal);
 }
 
-.project-card-game {
+.project-card-game,.project-card-coop {
     grid-column:1 / -1;
     display:grid;
     grid-template-columns:1.2fr 1fr;
@@ -486,8 +486,13 @@ section {
     background:linear-gradient(125deg,#e9f5f2,#fff 75%);
 }
 
-.project-card-game > div {
+.project-card-game > div,.project-card-coop > div {
     min-width:0;
+}
+
+.project-card-coop {
+    --project-accent:#62509a;
+    background:linear-gradient(125deg,#f0ecfa,#fff 75%);
 }
 
 .project-card-nba {
@@ -552,6 +557,11 @@ section {
 .project-league.consulting {
     color:var(--blue);
     background:#e4edfc;
+}
+
+.project-league.public-sector {
+    color:#56438a;
+    background:#e9e1f6;
 }
 
 .project-description {
@@ -1195,7 +1205,7 @@ section {
     .projects-grid {
         grid-template-columns:1fr;
     }
-    .project-card-game {
+    .project-card-game,.project-card-coop {
         grid-template-columns:1fr;
         gap:24px;
     }
