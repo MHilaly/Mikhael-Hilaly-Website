@@ -60,20 +60,6 @@
                     <span class="hero-badge"><i class="fas fa-chart-line" aria-hidden="true"></i> Data Analytics &amp; Applied AI</span>
                     <h1 class="hero-title">Mikhael Hilaly<span class="name-period">.</span><br><span class="hero-statement">Turning data into<br>clearer decisions.</span></h1>
                     <p class="hero-subtitle">I use data, statistical modeling, and AI tools to turn complex questions into practical insights. USC Marshall graduate pursuing data, AI, and analytics roles across industries.</p>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">100+</span>
-                            <span class="hero-stat-label">Visualizations Validated</span>
-                        </div>
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">1,000+</span>
-                            <span class="hero-stat-label">AI Outputs Reviewed</span>
-                        </div>
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">10</span>
-                            <span class="hero-stat-label">Portfolio Projects</span>
-                        </div>
-                    </div>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">Explore My Work</a>
                         <a href="assets/Mikhael_Hilaly_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Resume <span aria-hidden="true">↗</span></a>
@@ -344,29 +330,58 @@
                         <p class="project-description">A capstone simulation evaluating investment priorities across four women’s wellness product lines. Our five-person team focused on Premium Membership, using customer feedback and competitor research to assess what would make the paid experience more valuable.</p>
                         <h4 class="project-detail-title">My contribution</h4>
                         <p class="project-description">Researched Fitbit’s app and membership, synthesized 50 recent App Store and Google Play reviews, and compared features, pricing, and customer pain points to inform the team’s recommendation.</p>
-                        <p class="method-note">COOP learning simulation using public evidence and self-selected reviews; findings are directional.</p>
                     </div>
-                    <div>
-                        <h4 class="project-detail-title">From evidence to recommendation</h4>
-                        <div class="project-highlights">
-                            <div class="highlight">
-                                <i class="fas fa-comments" aria-hidden="true"></i>
-                                <span>Team research drew on 1,000 IVY Wellness Coach reviews, with tracking and reliability recurring as concerns.</span>
-                            </div>
-                            <div class="highlight">
-                                <i class="fas fa-search" aria-hidden="true"></i>
-                                <span>Compared verified product capabilities with customer feedback to identify opportunities that still needed validation.</span>
-                            </div>
+                    <ul class="ivy-stats" aria-label="Key findings from the team’s IVY review analysis">
+                        <li><strong>1,000</strong><span>IVY app reviews analyzed<br>App Store &amp; Google Play</span></li>
+                        <li><strong>62%</strong><span>rated 1–3 stars<br>619 of 1,000 reviews</span></li>
+                        <li><strong>63%</strong><span>of low-rated reviews concerned tracking or bugs</span></li>
+                        <li><strong>4.4/5</strong><span>average for coaching &amp; content<br>41 reviews</span></li>
+                    </ul>
+                    <div class="ivy-analysis">
+                        <figure class="ivy-sentiment" aria-labelledby="ivy-sentiment-title">
+                            <figcaption id="ivy-sentiment-title">What the review text revealed</figcaption>
+                            <p>Our team used Gemini in Google Sheets to assign each review a primary theme and a Like, Mixed, or Dislike sentiment label.</p>
+                            <ul class="ivy-sentiment-bars" aria-label="Sentiment across 1,000 IVY reviews">
+                                <li>
+                                    <div class="ivy-sentiment-label"><span>Dislike</span><span><strong>45.9%</strong> · 459 reviews</span></div>
+                                    <div class="ivy-bar-track" aria-hidden="true"><span class="ivy-bar-dislike"></span></div>
+                                </li>
+                                <li>
+                                    <div class="ivy-sentiment-label"><span>Mixed</span><span><strong>22.4%</strong> · 224 reviews</span></div>
+                                    <div class="ivy-bar-track" aria-hidden="true"><span class="ivy-bar-mixed"></span></div>
+                                </li>
+                                <li>
+                                    <div class="ivy-sentiment-label"><span>Like</span><span><strong>31.7%</strong> · 317 reviews</span></div>
+                                    <div class="ivy-bar-track" aria-hidden="true"><span class="ivy-bar-like"></span></div>
+                                </li>
+                            </ul>
+                            <p class="ivy-chart-note">AI-assisted labels prioritize review text, with star ratings as secondary context. These categories differ from the 1–3-star group above.</p>
+                        </figure>
+                        <div class="ivy-findings">
+                            <h4>Connecting sentiment to product priorities</h4>
+                            <ul>
+                                <li><strong>Reliability dominated low ratings.</strong> Tracking/sync (239) and bugs/data loss (149) accounted for 388 of 619 reviews rated 1–3 stars. Subscription/price represented 25, or about 4%.</li>
+                                <li><strong>Coaching was a relative strength.</strong> Coaching and content averaged 4.39/5 across 41 reviews, compared with 2.27/5 for tracking and sync across 298 reviews.</li>
+                                <li><strong>Subscription feedback went beyond price.</strong> Of 86 reviews mentioning a subscription, 31 focused on tracking and 23 on price—supporting closer attention to the core experience.</li>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="ivy-conclusion">
                         <div class="project-outcome">
                             <h4>Fix the core experience first</h4>
                             <p>Recommended deferring Premium expansion while preserving existing coaching, then revisiting investment once app reliability and paid-user engagement could be measured.</p>
                         </div>
+                        <p class="method-note">COOP learning simulation using public, self-selected reviews from 2015–2026. Findings are directional; reviews do not verify paid status or measure churn.</p>
+                        <div class="ivy-presentation">
+                            <a class="btn btn-primary" href="https://docs.google.com/presentation/d/1gYA5kw4ZjN9cN5qXgk3YliMGUp4m-C8lVpz96Gwu0iw/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">View final team presentation</a>
+                            <span>Google access may be required.</span>
+                        </div>
                         <div class="project-tech">
+                            <span class="tech-tag">Sentiment Analysis</span>
+                            <span class="tech-tag">Google Sheets</span>
+                            <span class="tech-tag">AI-Assisted Research</span>
                             <span class="tech-tag">Competitive Research</span>
-                            <span class="tech-tag">Customer Insights</span>
                             <span class="tech-tag">Product Strategy</span>
-                            <span class="tech-tag">Data Storytelling</span>
                         </div>
                     </div>
                 </article>
