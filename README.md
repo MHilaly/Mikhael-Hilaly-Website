@@ -93,6 +93,7 @@ The portfolio narrative leads with AI/data experience. The project collection pr
 - The workbook's `Data – 1,000 reviews!Q2:Q1001` contains 459 Dislike (45.9%), 224 Mixed (22.4%), and 317 Like (31.7%) labels. These are text-sentiment categories, distinct from the 619 reviews rated 1–3 stars (61.9%, rounded to 62%).
 - Of those 619 low-rated reviews, tracking/sync accounts for 239 and bugs/data loss 149: 388/619 = 62.68%, rounded to 63%. Subscription/price accounts for 25/619, about 4%. Across all ratings, coaching/content averages 4.39/5 (41 reviews), versus tracking/sync 2.27/5 (298 reviews). Among 86 reviews mentioning subscriptions, 31 concern tracking and 23 price; subscription mentions do not verify paid status. These are descriptive, self-selected 2015–2026 reviews, not causal evidence or measured business outcomes.
 - Removed the homepage's three metric counters at the user's request. Work-experience evidence remains in its relevant roles; no hero project count needs maintaining.
+- The stylesheet URL includes a version query to refresh cached CSS for returning visitors. Bump it when changing styles so new HTML does not render with an older cached layout.
 
 ### Midcycle presentation media
 
