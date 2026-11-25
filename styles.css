@@ -477,7 +477,7 @@ section {
     --project-accent:var(--teal);
 }
 
-.project-card-game,.project-card-coop {
+.project-card-game,.project-card-coop,.project-card-ivy {
     grid-column:1 / -1;
     display:grid;
     grid-template-columns:1.2fr 1fr;
@@ -486,13 +486,43 @@ section {
     background:linear-gradient(125deg,#e9f5f2,#fff 75%);
 }
 
-.project-card-game > div,.project-card-coop > div {
+.project-card-game > div,.project-card-coop > div,.project-card-ivy > div {
     min-width:0;
 }
 
 .project-card-coop {
     --project-accent:#62509a;
     background:linear-gradient(125deg,#f0ecfa,#fff 75%);
+}
+
+.project-card-ivy {
+    --project-accent:#246b68;
+    background:linear-gradient(125deg,#e8f4ee,#fff 75%);
+}
+
+.project-detail-title {
+    font-size:.85rem;
+    margin-bottom:8px;
+    color:var(--ink);
+}
+
+.project-outcome {
+    padding:18px 20px;
+    margin-bottom:20px;
+    border-left:3px solid var(--project-accent);
+    border-radius:0 12px 12px 0;
+    background:#e8f4ee;
+}
+
+.project-outcome h4 {
+    color:#205b59;
+    font-size:1rem;
+    margin-bottom:7px;
+}
+
+.project-outcome p {
+    color:#444c55;
+    font-size:.85rem;
 }
 
 .project-card-nba {
@@ -562,6 +592,11 @@ section {
 .project-league.public-sector {
     color:#56438a;
     background:#e9e1f6;
+}
+
+.project-league.product-strategy {
+    color:#205b59;
+    background:#d9eee5;
 }
 
 .project-description {
@@ -822,6 +857,14 @@ section {
     display:grid;
     grid-template-columns:repeat(3,minmax(0,1fr));
     gap:24px;
+}
+
+.education-card-certifications {
+    grid-column:1 / -1;
+}
+
+.education-card-certifications .credential-details {
+    margin-top:16px;
 }
 
 .education-card,.leadership-card {
@@ -1205,7 +1248,7 @@ section {
     .projects-grid {
         grid-template-columns:1fr;
     }
-    .project-card-game,.project-card-coop {
+    .project-card-game,.project-card-coop,.project-card-ivy {
         grid-template-columns:1fr;
         gap:24px;
     }
