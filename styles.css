@@ -525,6 +525,38 @@ section {
     font-size:.85rem;
 }
 
+.project-media-grid {
+    grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+}
+
+.project-media {
+    min-width:0;
+    margin:0;
+}
+
+.project-media img,.project-media video {
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:12px;
+}
+
+.project-media video {
+    background:#253039;
+}
+
+.project-media figcaption {
+    margin-top:12px;
+    font-size:.78rem;
+    line-height:1.6;
+    color:var(--muted);
+}
+
 .project-card-nba {
     --project-accent:#b87518;
 }
@@ -1251,6 +1283,9 @@ section {
     .project-card-game,.project-card-coop,.project-card-ivy {
         grid-template-columns:1fr;
         gap:24px;
+    }
+    .project-media-grid {
+        grid-template-columns:1fr;
     }
     .project-card {
         padding:24px;

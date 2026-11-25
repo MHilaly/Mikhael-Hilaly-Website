@@ -88,7 +88,14 @@ The portfolio narrative leads with AI/data experience. The project collection pr
 - IVY project at `#ivy-project`: a COOP capstone simulation, October–November 2026. The cohort compared four product lines; Mikhael's five-person pod focused on Premium Membership. His verified contribution covers Fitbit competitor research and synthesis of 50 reviews (25 per app store), feature and price comparisons, and recommendations. The team's broader IVY evidence comprised 1,000 Wellness Coach reviews. Do not attribute that entire dataset to Mikhael alone.
 - Sources read from the user's Drive: `C686 Final Capstone Presentation` (modified November 24), `Cohort_ProductInvestmentMemo_v2` (November 23), and `IVY Improvement — Mikhael’s Fitbit Research & Presentation Brief` (November 16). The final direction is to defer Premium R&D while retaining existing coaching, then revisit after app reliability and verified paid-cohort measures are available. Earlier “Improve” drafts do not override the final recommendation.
 - This was a learning simulation using public evidence, not a commissioned IVY engagement. Reviews are self-selected and do not establish paid status, churn, willingness to pay, clinical performance, or business impact. Conflicting score totals and unverified market/product claims are deliberately excluded from the portfolio summary.
-- The final cohort deck is restricted to collaborators, so no public presentation link or copied deck is included. Drive sharing was not changed. The user plans to supply photographs; add those later without placeholder images or invented project visuals.
+- The final cohort deck is restricted to collaborators, so no public presentation link or copied deck is included. Drive sharing was not changed. IVY photographs can be added when supplied, without placeholder images or invented project visuals.
+
+### Midcycle presentation media
+
+- The user supplied `IMG_5199.HEIC` and `IMG_5182.MOV` for the CTA midcycle project on November 25, 2026. These belong under `#coop-midcycle-project`, not the IVY project.
+- Photo: `assets/coop-midcycle-presentation.webp`, 1600 × 1200, 154,660 bytes. Preserves the complete composition and orientation.
+- Video: `assets/coop-midcycle-presentation.mp4`, 1280 × 720, about 18 seconds, 3,440,435 bytes. Converted from iPhone HEVC/HLG to browser-compatible H.264/AAC with SDR tone mapping and fast-start metadata. Source files remain untouched.
+- The player uses native controls, inline playback, a still poster, and `preload="none"`; no autoplay. The nearby caption describes the presentation topic. Media files omit original device metadata. Photos for the separate IVY project can be added when supplied.
 
 ## Contact form
 
